@@ -1,4 +1,4 @@
-# Ambiente de estudos para disciplina de programação orientada a objetos - IFPB
+# Ambiente de estudos para disciplina de Programação Orientada a Objetos - IFPB
 Rapidamente construa o ambiente de estudos com o Docker e docker-compose.
 
 ## Dependências
@@ -25,13 +25,12 @@ javac HelloWorld.java
 java HelloWorld.java
 ```
 
-
 ## Explicando
 ### docker-compose.yml
-Aqui o docker-compose.yml é bem minimalista, ele define o minimo possível.
+Aqui o docker-compose.yml é bem minimalista, definindo o mínimo possível.
 - Existe apenas um serviço chamado openjdk
 - A imagem inclui a openjdk na última versão
-- Define o **working_dir** ou diretório de trabalho, ao executar o bash dentro do container o usuário já começa na pasta /src
+- Define o **working_dir** ou diretório de trabalho. Ao executar o bash dentro do container, o usuário já começa na pasta /src
 - Define o **volumes** e diz que a pasta atual do host será mapeada (e sincronizada) com a pasta /src dentro do container
 
 ### Makefile
